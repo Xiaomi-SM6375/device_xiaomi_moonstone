@@ -37,8 +37,8 @@ static const variant_info_t moonstone_p_global_info = {
     .nfc = true,
 };
 
-static const variant_info_t sunstone_info = {
-    .hwc_value = "Global",
+static const variant_info_t sunstone_cn_info = {
+    .hwc_value = "",
     .model_value = "",
 
     .brand = "Redmi",
@@ -46,7 +46,7 @@ static const variant_info_t sunstone_info = {
     .marketname = "Redmi Note 12 5G",
     .model = "22101317C",
     .name = "sunstone",
-    .build_fingerprint = "Redmi/sunstone/sunstone:11/TKQ1.221013.002/V14.0.4.0.TMQMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/sunstone/sunstone:13/TKQ1.221013.002/V14.0.4.0.TMQCNXM:user/release-keys",
 
     .nfc = false,
 };
@@ -65,11 +65,26 @@ static const variant_info_t sunstone_global_info = {
     .nfc = true,
 };
 
+static const variant_info_t sunstone_x_info = {
+    .hwc_value = "China",
+    .model_value = "",
+
+    .brand = "Redmi",
+    .device = "sunstone",
+    .marketname = "Redmi Note 12R Pro 5G",
+    .model = "22101317C",
+    .name = "sunstone",
+    .build_fingerprint = "Redmi/sunstone/sunstone:13/TKQ1.221013.002/V14.0.4.0.TMQCNXM:user/release-keys",
+
+    .nfc = false,
+};
+
 static const std::vector<variant_info_t> variants = {
     moonstone_global_info,
     moonstone_p_global_info,
-    sunstone_info,
+    sunstone_cn_info,
     sunstone_global_info,
+    sunstone_x_info,
 };
 
 void vendor_load_properties() {

@@ -5,9 +5,9 @@
 //
 
 cc_library_static {
-    name: "init_xiaomi_moonstone",
-    srcs: ["init_xiaomi_moonstone.cpp"],
-    whole_static_libs: ["//device/xiaomi/sm6375-common:libinit_xiaomi_holi"],
+    name: "init_xiaomi_stone",
+    srcs: ["init_xiaomi_stone.cpp"],
+    whole_static_libs: ["//device/xiaomi/miholi-common:libinit_xiaomi_holi"],
     include_dirs: ["system/core/init"],
     recovery_available: true,
 }
