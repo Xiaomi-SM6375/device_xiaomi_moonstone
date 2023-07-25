@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/moonstone
+DEVICE_PATH := device/xiaomi/stone
 
 # Inherit from sm6375-common
-include device/xiaomi/sm6375-common/BoardConfigCommon.mk
+include device/xiaomi/miholi-common/BoardConfigCommon.mk
 
 # Build Broken
 BUILD_BROKEN_DUP_RULES := true
@@ -17,8 +17,8 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 TARGET_SCREEN_DENSITY := 440
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_moonstone
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_moonstone
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_stone
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_stone
 
 # ODM Manifest
 ODM_MANIFEST_SKUS += nfc

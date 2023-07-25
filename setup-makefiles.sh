@@ -8,8 +8,8 @@
 
 set -e
 
-export DEVICE=moonstone
-export DEVICE_COMMON=sm6375-common
+export DEVICE=stone
+export DEVICE_COMMON=miholi-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

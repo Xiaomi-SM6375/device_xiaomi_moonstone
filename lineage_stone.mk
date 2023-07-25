@@ -12,17 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from moonstone device
-$(call inherit-product, device/xiaomi/moonstone/device.mk)
+$(call inherit-product, device/xiaomi/stone/device.mk)
 
-PRODUCT_NAME := lineage_moonstone
-PRODUCT_DEVICE := moonstone
+PRODUCT_NAME := lineage_stone
+PRODUCT_DEVICE := stone
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO X5 5G
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := holi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="moonstone-user 13 TKQ1.221114.001 V14.0.4.0.TMPMIXM release-keys"
+	PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230705.001.A1 10217028 release-keys"
 
-BUILD_FINGERPRINT := POCO/moonstone_p_global/moonstone:13/TKQ1.221114.001/V14.0.4.0.TMPMIXM:user/release-keys
+BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TQ3A.230705.001.A1/10217028:user/release-keys"

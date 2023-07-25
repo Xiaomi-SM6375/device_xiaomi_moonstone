@@ -5,7 +5,7 @@
 #
 
 # Inherit from sm6375-common
-$(call inherit-product, device/xiaomi/sm6375-common/holi.mk)
+$(call inherit-product, device/xiaomi/miholi-common/miholi.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
