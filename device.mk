@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from sm6375-common
+# Inherit from miholi-common
 $(call inherit-product, device/xiaomi/miholi-common/miholi.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -51,4 +51,4 @@ PRODUCT_PACKAGES += \
     WifiOverlay
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/moonstone/moonstone-vendor.mk)
+$(call inherit-product, vendor/xiaomi/stone/stone-vendor.mk)
